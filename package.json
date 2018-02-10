@@ -1,0 +1,19 @@
+{
+  "name": "msc-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mavajsunco/msc-website.git"
+  },
+  "author": "MAVAJ SUN CO",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mavajsunco/msc-website/issues"
+  },
+  "homepage": "https://github.com/mavajsunco/msc-website#readme"
+}
