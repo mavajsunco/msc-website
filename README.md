@@ -8,7 +8,7 @@
 ## Status
 
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/mavajsunco/msc-website/master/LICENSE)
-[![npm version](https://img.shields.io/npm/v/msc-website.svg)](https://www.npmjs.com/package/msc-website)
+[![npm version](https://img.shields.io/npm/v/mavaj-sun-co-website.svg)](https://www.npmjs.com/package/mavaj-sun-co-website)
 [![Build Status](https://api.travis-ci.org/mavajsunco/msc-website.svg?branch=master)](https://travis-ci.org/mavajsunco/msc-website)
 [![dependencies Status](https://david-dm.org/mavajsunco/msc-website/status.svg)](https://david-dm.org/mavajsunco/msc-website)
 [![devDependencies Status](https://david-dm.org/mavajsunco/msc-website/dev-status.svg)](https://david-dm.org/mavajsunco/msc-website?type=dev)
