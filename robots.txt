@@ -1,4 +1,4 @@
 User-agent: *
 allow: /
 
-Sitemap: http://mavajsunco.com/sitemap.xml
+Sitemap: https://mavajsunco.com/sitemap.xml
