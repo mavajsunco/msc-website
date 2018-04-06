@@ -1,9 +1,9 @@
-# [MAVAJ SUN CO](http://mavajsunco.com/)
+# [MAVAJ SUN CO](https://mavajsunco.com/)
 
 
 ## Preview
 
-**[View Live Preview](http://mavajsunco.com/)**
+**[View Live Preview](https://mavajsunco.com/)**
 
 ## Status
 
