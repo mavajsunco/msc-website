@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<!-- Open search config to get tab-initiated toolbar search working, see http://www.chromium.org/tab-to-search -->
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>mavajsunco.com</ShortName>
+    <Description>mavajsunco.com</Description>
+    <Url type="text/html" method="get" template="https://www.mavajsunco.com/search-results/?q={searchTerms}"/>
+</OpenSearchDescription>
