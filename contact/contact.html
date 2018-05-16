@@ -1,0 +1,443 @@
+
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#Business-Inquiries" class="business <?php echo $section == "business" ? 'active' : '' ?>">Business inquiries</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#Get-a-Quote"        class="quote <?php echo $section == "quote" ? 'active' : '' ?>"  >Get a quote</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#Support"            class="support <?php echo $section == "support" ? 'active' : '' ?>">Support</a></li>
+    <li role="presentation"><a role="tab" data-toggle="tab" href="#Social-Networks"    class="social-network">Social networks</a></li>
+</ul>
+<div id="activeSection" class="<?php echo $section; ?>" style="display: none"></div>
+
+<!-- Tab panes -->
+<div class="tab-content">
+    <!--start message-->
+    <?php if (isset($_SESSION['success_message']) && $_SESSION['success_message'] != ""): ?>
+        <div class="col-sm-6" style="margin-top: 20px;">
+            <div class="alert alert-success" role="alert">
+                <span class="glyphicon glyphicon-ok-sign" aria-hidden="true"></span>
+                <span class="sr-only">Success:</span>
+                <?php echo $_SESSION['success_message'] ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <?php if (isset($_SESSION['error_message']) && $_SESSION['error_message'] != ""): ?>
+        <div class="col-sm-6" style="margin-top: 20px;">
+            <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+                <span class="sr-only">Error:</span>
+                <?php echo $_SESSION['error_message'] ?>
+            </div>
+        </div>
+    <?php endif; ?>
+    <!--start message-->
+    <div role="tabpanel" class="tab-pane fade in active" id="Business-Inquiries"><!-- Business Inquiries -->
+
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Yes, let's talk business!</h2>
+                <p>Are you interested in working with MAVAJ SUN CO ? Please reach out and a business representative will get back to you shortly.</p>
+            </div>
+
+            <form name="frmBusiness" id="frmBusiness" method="post" role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data"  >
+                <input type="hidden" name="section" value="business">
+                <div class="col-lg-6"><!-- Right Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="bInputName">Your Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" name="bInputName" id="bInputName" placeholder="It's pleasure to meet you" data-validation="length" data-validation-length="min4" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bCompanyName">Your Company</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <input type="text" class="form-control" name="bCompanyName" id="bCompanyName" placeholder="Enter your company name here ..." >
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bPhone">Your Phone</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone-alt"></i></span>
+                            <input type="text" class="form-control" name="bPhone" id="bPhone" placeholder="Enter your contact number here ...">
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+                </div><!-- Right Side Business Contact Form End -->
+
+                <div class="col-lg-6"><!-- Left Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="bEmail">Your Email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="email" class="form-control" name="bEmail" id="bEmail" placeholder="Let's keep in touch ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bSubject">Your Subject</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pushpin"></i></span>
+                            <input type="text" class="form-control" name="bSubject" id="bSubject" placeholder="Enter your subject here ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="bMobile">Mobile</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input type="tel" class="form-control" name="bMobile" id="bMobile" placeholder="Enter your mobile number here ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div><!-- Left Side Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- Message Business Contact Form-->
+                    <div class="form-group">
+                        <label for="bMessage">And what can we help you with?</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="bMessage" id="bMessage" rows="4" placeholder="We look forward to having an interesting discussion ..." required=""></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div><!-- Message Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- captcha & Submit -  Business Contact Form-->
+                    <div class="row">
+                        <div class="col-lg-2">
+                            <img class="img-rounded" id="bCaptchaImg" src="../resources/phpcaptcha/captcha.php?rand=<?php echo md5(uniqid()) ?>" alt="CAPTCHA Image" align="left" />
+                        </div>
+                        <div class="col-lg-1">
+                            <a tabindex="-1" style="border-style: none;" href="javascript:;" title="Refresh Image" onclick="document.getElementById('bCaptchaImg').src = '../esource/phpcaptcha/captcha.php?rand=' + Math.random();"><i class="glyphicon glyphicon-refresh"></i></a><br />
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="bCaptcha">Enter Code</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input type="text" maxlength="6" class="form-control captch_box" name="bCaptcha" id="bCaptcha" placeholder="Enter the code" required>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4"><!-- Scaptcha-  Business Contact Form-->
+                            <div class="form-group">
+                                <label> &nbsp;</label>
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-primary">Send <i class="glyphicon glyphicon-send"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Submit Section - Business Contact Form End -->
+            </form>
+        </div>
+    </div><!-- Business Inquiries End -->
+
+    <div role="tabpanel" class="tab-pane fade" id="Get-a-Quote"><!-- Get a Quote-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Get a quote. it's free.</h2>
+                <p>For a free no obligation quote simply complete the form below with your details and click send. If you would rather discuss your development with a member of our team please call.</p>
+            </div>
+
+            <form method="post" name="frmQuote" id="frmQuote" role="form" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data"  >
+                <input type="hidden" name="section" value="quote">
+                <div class="col-lg-6"><!-- Right Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="qInputName">Your Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" name="qInputName" id="qInputName" placeholder="It's pleasure to meet you" required data-validation="length" data-validation-length="min4">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qCompanyName">Business Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <input type="text" class="form-control" name="qCompanyName" id="qCompanyName" placeholder="Enter your company name here ..." >
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qBudget">Your Budget</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-usd"></i></span>
+                            <input type="tel" class="form-control" name="qBudget" id="qBudget" placeholder="">
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qFile">Any Attachement</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-file"></i></span>
+                            <input type="file" class="form-control" name="qFile" id="qFile" placeholder="">
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                </div><!-- Right Side Business Contact Form End -->
+
+                <div class="col-lg-6"><!-- Left Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="qEmail">Your Email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="email" class="form-control" name="qEmail" id="qEmail" placeholder="Let's keep in touch ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qYourPhone">Your Phone</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon glyphicon-earphone"></i></span>
+                            <input type="text" class="form-control" name="qYourPhone" id="qYourPhone" placeholder="Enter your company name here ..." >
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qMobile">Mobile</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                            <input type="tel" class="form-control" name="qMobile" id="qMobile" placeholder="Enter your mobile number here ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="qSelect">Category</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <select class = "form-control" style = "width:100%;" multiple name="qSelect[]" id="qSelect">
+                                <optgroup label="Web Solutions"></optgroup>
+                                <option value="Web Presence">Web Presence</option>
+                                <option value="Online Branding">Online Branding</option>
+                                <option value="Business Management &amp; Communication">Business Management &amp; Communication</option>
+                                <option value="Online Sales &amp; Marketing">Online Sales &amp; Marketing</option>
+                                <optgroup label="Web Design &amp; Development"></optgroup>
+                                <option value="Web Design">Web Design</option>
+                                <option value="Web Development">Web Development</option>
+                                <option value="Ecommerce Solutions">Ecommerce Solutions</option>
+                                <option value="Web Based CRM">Web Based CRM</option>
+                                <option value="Content Management System">Content Management System</option>
+                                <option value="Social Networking Solutions">Social Networking Solutions</option>
+                                <option value="Flash Application development">Flash Application development</option>
+                                <option value="Web Application Development">Web Application Development</option>
+                                <optgroup label="Web Marketing"></optgroup>
+                                <option value="Search Engine Optimization">Search Engine Optimization</option>
+                                <option value="Pay Per Click Management">Pay Per Click Management</option>
+                                <option value="Banner Advertisement">Banner Advertisement</option>
+                                <option value="Email Marketing">Email Marketing</option>
+                                <option value="Social Media Marketing">Social Media Marketing</option>
+                                <option value="Web Analytics">Web Analytics</option>
+                                <optgroup label="Mobile Application"></optgroup>
+                                <option value="iPhone Application Development">iPhone Application Development</option>
+                                <option value="Android Application Development">Android Application Development</option>
+                                <option value="Blackberry Application Development">Blackberry Application Development</option>
+                                <option value="Windows Mobile Application Development">Windows Mobile Application Development</option>
+                                <option value="Symbian OS Application Development">Symbian OS Application Development</option>
+                            </select>
+                        </div>
+                    </div>
+                </div><!-- Left Side Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- Message Business Contact Form-->
+                    <div class="form-group">
+                        <label for="qMessage">Project Specifications</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="qMessage" id="qMessage" rows="4" placeholder="Please give us a brief about your new project.." required=""></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div><!-- Message Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- captcha & Submit -  Quote Contact Form-->
+                    <div class="row">
+
+                        <div class="col-lg-2">
+                            <img class="img-rounded" id="qCaptchaImg" src="" alt="CAPTCHA Image" align="left" />
+                        </div>
+                        <div class="col-lg-1">
+                            <a tabindex="-1" style="border-style: none;" href="javascript:;" title="Refresh Image" onclick="document.getElementById('qCaptchaImg').src = '../resources/phpcaptcha/captcha.php?rand=' + Math.random();"><i class="glyphicon glyphicon-refresh"></i></a><br />
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="qCaptcha">Enter Code</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input type="text" maxlength="6" class="form-control captch_box" name="qCaptcha" id="qCaptcha" placeholder="Enter the code" required>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5"><!-- Scaptcha-  Business Contact Form-->
+                            <div class="form-group">
+                                <label> &nbsp;</label>
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-primary">Send <i class="glyphicon glyphicon-send"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Submit Section - Business Contact Form End -->
+            </form>
+        </div>
+    </div><!-- Get a Quote End -->
+
+    <div role="tabpanel" class="tab-pane fade" id="Support"><!-- Support-->
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Need Support?</h2>
+                <p>MAVAJ SUN CO is a customer-focused Company. Kindly send your requirement. Our support our team will be in contact with you soon.</p>
+            </div>
+
+            <form method="post" role="form" name="frmSupport" id="frmSupport" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" enctype="multipart/form-data"  >
+                <input type="hidden" name="section" value="support">
+                <div class="col-lg-6"><!-- Right Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="sInputName">Your Name</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                            <input type="text" class="form-control" name="sInputName" id="bInputNames" placeholder="It's pleasure to meet you" required data-validation="length" data-validation-length="min4">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sCompanyName">Your Company</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <input type="text" class="form-control" name="sCompanyName" id="sCompanyName" placeholder="Enter your company name here ..." >
+                            <span class="input-group-addon"></span>
+                        </div>
+                    </div>
+
+                </div><!-- Right Side Business Contact Form End -->
+
+                <div class="col-lg-6"><!-- Left Side Business Contact Form -->
+
+                    <div class="form-group">
+                        <label for="sEmail">Your Email</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                            <input type="email" class="form-control" name="sEmail" id="sEmail" placeholder="Always good so we can get back to you ..." required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="sUrl">URL</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pushpin"></i></span>
+                            <input type="text" class="form-control" name="sUrl" id="sUrl" placeholder="Your company URL here ...(eg:http://www.example.com)" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+
+                </div><!-- Left Side Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- Message Business Contact Form-->
+                    <div class="form-group">
+                        <label for="sMessage">Anything you like to add?</label>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                            <textarea class="form-control" name="sMessage" id="sMessage" rows="4" placeholder="Maybe an introduction about yourself ...?" required=""></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                        </div>
+                    </div>
+                </div><!-- Message Business Contact Form End -->
+
+                <div class="col-lg-12"><!-- captcha & Submit -  Support Contact Form-->
+                    <div class="row">
+
+                        <div class="col-lg-2">
+                            <img class="img-rounded" id="sCaptchaImg" src="" alt="CAPTCHA Image" align="left" />
+                        </div>
+                        <div class="col-lg-1">
+                            <a tabindex="-1" style="border-style: none;" href="javascript:;" title="Refresh Image" onclick="document.getElementById('sCaptchaImg').src = '../resources/phpcaptcha/captcha.php?rand=' + Math.random();"><i class="glyphicon glyphicon-refresh"></i></a><br />
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="form-group">
+                                <label for="sCaptcha">Enter Code</label>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                                    <input type="text" maxlength="6" class="form-control captch_box" name="sCaptcha" id="sCaptcha" placeholder="Enter the code" required>
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4"><!-- captcha-  Business Contact Form-->
+                            <div class="form-group">
+                                <label> &nbsp;</label>
+                                <div class="input-group">
+                                    <button type="submit" class="btn btn-primary">Send <i class="glyphicon glyphicon-send"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- Submit Section - Business Contact Form End -->
+            </form>
+        </div>
+    </div><!-- Support End -->
+
+    <div role="tabpanel" class="tab-pane fade" id="Social-Networks"><!-- Social Network-->
+        <ul>
+            <li><a href="https://www.facebook.com/MavajSunCo" class="popup" title="Facebook Fan Page" target="_blank">       <span>  Facebook    </span></a></li>
+            <li><a href="https://plus.google.com/+Mavajsunco" class="popup" title="Google +" target="_blank" >               <span>  Google      </span></a></li>
+            <li><a href="https://www.youtube.com/MavajSunCo" class="popup" title="Watch youtube our channel" target="_blank"><span>  Youtube     </span></a></li>
+            <li><a href="https://vimeo.com/MavajSunCo" class="popup" title="Watch vimeo our channel" target="_blank">        <span>  Vimeo       </span></a></li>
+            <li><a href="https://www.linkedin.com/company/mavaj-sun-co" class="popup" title="linkedin" target="_blank">      <span>  Linkedin    </span></a></li>      
+            <li><a href="https://www.flickr.com/photos/MavajSunCo/" class="popup" title="Flickr" target="_blank">            <span>  Flickr      </span></a></li>
+            <li><a href="http://instagram.com/MavajSunCo/" class="popup" title="Instagram" target="_blank">                  <span>  Instagram   </span></a></li>
+            <li><a href="http://mavajsunco.tumblr.com/" class="popup" title="Tumblr" target="_blank">                        <span>  Tumblr      </span></a></li>
+            <li><a href="http://www.pinterest.com/MavajSunCo/" class="popup" title="Pinterest" target="_blank">              <span>  Pinterest   </span></a></li>
+        </ul>
+    </div><!-- Social Network End -->
+</div>
+<div class="clear"></div>
+<!--<div class="row">
+    <div class="col-lg-3 myAddress">
+        <address>
+            <h4 style = "font-weight:bold;color:#0392d2;">MAVAJ SUN CO</h4><br>
+            Some Towers here: <br>
+            Address Line1 <br>
+            Address Line2 <br>
+            Address Line3 <br>
+            <br>
+            <br>
+            M : +971.50.9194824<br>
+            T : +971.4.4522880<br>
+            F : +971.4.4522880<br>
+        </address>
+    </div>
+    <div class="col-lg-9">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462569.8338586457!2d55.22984435!3d25.07385795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDubai+-+United+Arab+Emirates!5e0!3m2!1sen!2sin!4v1416191965822" width="100%" height="280" frameborder="0" style="border:0"></iframe>
+    </div>
+</div>-->
+
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.js"></script>
+<script src="../js/js/MavajSunCo-Contact.js"></script>

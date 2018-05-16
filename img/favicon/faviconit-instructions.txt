@@ -1,7 +1,4 @@
-thanks for using faviconit!
-copy the files to your site and add this code inside the HTML <HEAD> tag:
 
-	<!-- ****** faviconit.com favicons ****** -->
 	<link rel="shortcut icon" href="/img/favicon/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="/img/favicon/favicon.ico">
 	<link rel="icon" type="image/png" sizes="196x196" href="/img/favicon/favicon-192.png">
@@ -22,4 +19,3 @@ copy the files to your site and add this code inside the HTML <HEAD> tag:
 	<meta name="msapplication-TileColor" content="#FFFFFF">
 	<meta name="msapplication-TileImage" content="/img/favicon/favicon-144.png">
 	<meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-	<!-- ****** faviconit.com favicons ****** -->
