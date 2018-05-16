@@ -1,693 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114050218-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114050218-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+            gtag('config', 'UA-114050218-1');
+        </script>
 
-        function gtag() {
-            dataLayer.push(arguments);
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="robots" content="index, follow"/>
+        <meta name="generator" content="MAVAJ SUN CO - https://mavajSunCo.com"/>
+        <meta name="copyright" content="MAVAJ SUN CO"/>
+        <meta name="author" content="MAVAJ SUN CO">
+        <meta name="revisit-after" content="4 Days"/>
+        <meta name="google-site-verification" content=""/>
+        <meta name="geo.region" content="*"/>
+        <meta name="geo.placename" content=""/>
+        <meta name="geo.position" content=""/>
+        <meta name="ICBM" content="25.043184, 55.136961"/>
+        <meta name="keywords"content="MavajSunCo , MSC , MAVAJ , SUN , CO , MAVAJ SUN CO ,MavajSunCo.com ,gadget, IT , Manager ,Offshore Software Development, Custom Software Development, Application Development, Outsourcing, Services, business consulting services, software services outsourcing, software development company, software company, software product development, retail and distribution solutions, banking solution, finance, insurance solutions, healthcare services, sharepoint development, web application development, custom software development, web development, web designing, software re-engineering, quality assurance testing, content management system, security, immersive technology, imaging technology,digital media "/>
+        <meta name="description" content="Mavaj Sun Co. provides offshore software and custom application development services through offshore development centers , serving Software Development Companies, Online Businesses, manufacturers, and marketing and media companies. immersive imaging technology. Patented technology produces spherical images that let you feel like you are actually inside the scene. Organizations utilize technology for a wide range of digital still photography and video applications, ranging from surveillance, to visual documentation, to forensic analysis."/>
+        <meta name="DC.title" content="Web designing | Web development | Hosting - MAVAJ SUN CO"/>
+
+        <title>MAVAJ SUN CO - Web development | Web design | Web application | multimedia programming | software development</title>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Organization",
+          "url": "https://MavajSunCo.com",
+          "contactPoint": [{
+            "@type": "ContactPoint",
+            "email": "contact@MavajSunCo.com",
+            "contactType": "customer service",
+            "telephone": "+800-MAVAJ-SUNCO"
+          }]
         }
+        </script>
 
-        gtag('js', new Date());
+        <!-- favicons -->
+        <link rel="shortcut icon" href="/img/favicon/favicon.ico">
+        <link rel="icon" sizes="16x16 32x32 64x64" href="/img/favicon/favicon.ico">
+        <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon/favicon-192.png">
+        <link rel="icon" type="image/png" sizes="160x160" href="/img/favicon/favicon-160.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96.png">
+        <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon/favicon-64.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16.png">
+        <link rel="apple-touch-icon" href="/img/favicon/favicon-57.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/favicon-114.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/favicon-72.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/favicon-144.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/favicon-60.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/favicon-120.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/favicon-76.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/favicon-152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/favicon-180.png">
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+        <meta name="msapplication-TileImage" content="/img/favicon/favicon-144.png">
+        <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
 
-        gtag('config', 'UA-114050218-1');
-    </script>
+        <!-- Bootstrap Core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="robots" content="index, follow"/>
-    <meta name="generator" content="MAVAJ SUN CO - https://mavajSunCo.com"/>
-    <meta name="copyright" content="MAVAJ SUN CO"/>
-    <meta name="author" content="MAVAJ SUN CO">
-    <meta name="revisit-after" content="4 Days"/>
-    <meta name="google-site-verification" content=""/>
-    <meta name="geo.region" content="*"/>
-    <meta name="geo.placename" content=""/>
-    <meta name="geo.position" content=""/>
-    <meta name="ICBM" content="25.043184, 55.136961"/>
+        <!-- Custom Fonts -->
+        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+              rel="stylesheet" type="text/css">
+        <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 
-    <meta name="keywords"
-          content="MavajSunCo , MSC , MAVAJ , SUN , CO , MAVAJ SUN CO ,MavajSunCo.com ,gadget, IT , Manager ,Offshore Software Development, Custom Software Development, Application Development, Outsourcing, Services, business consulting services, software services outsourcing, software development company, software company, software product development, retail and distribution solutions, banking solution, finance, insurance solutions, healthcare services, sharepoint development, web application development, custom software development, web development, web designing, software re-engineering, quality assurance testing, content management system, security, immersive technology, imaging technology,digital media "
-    />
+        <!-- Custom CSS -->
+        <link href="css/msc.min.css" rel="stylesheet">
 
-    <meta name="description"
-          content="Mavaj Sun Co. provides offshore software and custom application development services through offshore development centers , serving Software Development Companies, Online Businesses, manufacturers, and marketing and media companies. immersive imaging technology. Patented technology produces spherical images that let you feel like you are actually inside the scene. Organizations utilize technology for a wide range of digital still photography and video applications, ranging from surveillance, to visual documentation, to forensic analysis."
-    />
+    </head>
 
-    <meta name="DC.title" content="Web designing | Web development | Hosting - MAVAJ SUN CO"/>
+    <body id="page-top">
+        <!-- Navigation -->
+        <a class="menu-toggle rounded" href="#">
+            <i class="fa fa-bars"></i>
+        </a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#page-top">Home</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#about">About</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#services">Services</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+                </li>
+                <li class="sidebar-nav-item">
+                    <a class="js-scroll-trigger" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
 
-    <title>MAVAJ SUN CO - Web development | Web design | Web application | multimedia programming | software
-        development</title>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "Organization",
-      "url": "https://MavajSunCo.com",
-      "contactPoint": [{
-        "@type": "ContactPoint",
-        "email": "contact@MavajSunCo.com",
-        "contactType": "customer service",
-        "telephone": "+800-MAVAJ-SUNCO"
-      }]
-    }
-
-
-
-    </script>
-
-    <!-- favicons -->
-    <link rel="shortcut icon" href="/img/favicon/favicon.ico">
-    <link rel="icon" sizes="16x16 32x32 64x64" href="/img/favicon/favicon.ico">
-    <link rel="icon" type="image/png" sizes="196x196" href="/img/favicon/favicon-192.png">
-    <link rel="icon" type="image/png" sizes="160x160" href="/img/favicon/favicon-160.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96.png">
-    <link rel="icon" type="image/png" sizes="64x64" href="/img/favicon/favicon-64.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16.png">
-    <link rel="apple-touch-icon" href="/img/favicon/favicon-57.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/favicon-114.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/favicon-72.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/favicon-144.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/favicon-60.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/favicon-120.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/favicon-76.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/favicon-152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/favicon-180.png">
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="msapplication-TileImage" content="/img/favicon/favicon-144.png">
-    <meta name="msapplication-config" content="/img/favicon/browserconfig.xml">
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
-          rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="css/msc.min.css" rel="stylesheet">
-
-</head>
-
-<body id="page-top">
-<!-- Navigation -->
-<a class="menu-toggle rounded" href="#">
-    <i class="fa fa-bars"></i>
-</a>
-<nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#page-top">Home</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#about">About</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#services">Services</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
-        </li>
-        <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#contact">Contact</a>
-        </li>
-    </ul>
-</nav>
-
-<!-- Header -->
-<header class="masthead d-flex">
-    <div class="container text-center my-auto">
-        <h1 class="mb-1">MAVAJ SUN CO</h1>
-        <h3 class="mb-5">
-            <em>Crafted with care, coded by coffee, celebrated with champagne</em>
-        </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#what-we-offer">Find Out More</a>
-    </div>
-    <div class="overlay"></div>
-</header>
-
-
-<!-- what-we-offer -->
-
-<!-- Portfolio -->
-<section class="content-section" id="portfolio">
-    <div class="container">
-        <div class="content-section-heading text-center">
-            <h3 class="text-secondary mb-0">Services & Products</h3>
-            <h2 class="mb-5">What We Offer</h2>
-        </div>
-        <div class="row no-gutters">
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Web Design & Development</h2>
-                  <p class="mb-0">From conception and strategy to design and implementation, MAVAJ SUN CO
-                    builds and hosts premium websites for businesses, associations, government, and companies.</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
-                </a>
+        <!-- Header -->
+        <header class="masthead d-flex">
+            <div class="container text-center my-auto">
+                <h1 class="mb-1">MAVAJ SUN CO</h1>
+                <h3 class="mb-5">
+                    <em>Crafted with care, coded by coffee, celebrated with champagne</em>
+                </h3>
+                <a class="btn btn-primary btn-xl js-scroll-trigger" href="#what-we-offer">Find Out More</a>
             </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Digital Strategy & Consulting</h2>
-                  <p class="mb-0">MAVAJ SUN CO's digital strategy team consists of Subject Matter Experts
-                    (SME’s) from all facets of the digital experience.</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Internet Marketing & Promote</h2>
-                  <p class="mb-0">At MAVAJ SUN CO, we understand that search engine optimization is the key to your web site's success. ALL of our web sites are built to give high search engine rankings.</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
-                </a>
-            </div>
-            <div class="col-lg-6">
-                <a class="portfolio-item" href="#">
-              <span class="caption">
-                <span class="caption-content">
-                  <h2>Hosting & Security</h2>
-                  <p class="mb-0">MAVAJ SUN CO provides quality, managed hosting services for our customers.
-                    Unlike many other hosting providers, our hosting services are custom tailored to your site.</p>
-                </span>
-              </span>
-                    <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
+            <div class="overlay"></div>
+        </header>
 
+        <!-- What We Offer -->
+        <section id="what-we-offer" class="content-section" >
+            <div class="container">
 
-<!-- Call to Action -->
-<section class="content-section bg-primary text-white">
-    <div class="container text-center">
-        <h2 class="mb-4">Web design is our Business and our passion.
-            Our approach is simple and direct, we deliver stunning web design
-            great usability and scalibility with more power through cutting edge web.</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">GET A QUOTE</a>
-        <a href="#" class="btn btn-xl btn-dark">CHECK OUT OUR WORKS</a>
-    </div>
-</section>
-
-
-<!--  -->
-<section class="content-section" id="">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-12">
-                <h2>About MAVAJ SUN CO</h2>
-
-                <p>MAVAJ SUN CO has grown to be premier website design, online marketing, web
-                    hosting company.</p>
-                <p>MAVAJ SUN CO with capabilities to service clients across the world. the professional
-                    team at MAVAJ SUN CO have designed and built websites for a diverse range of organisations across many
-                    industry groupings, provide hosting server , domain name registration and help them to running their online business
-                    seamlessly . </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4 mx-auto">
-                <h3>WHAT</h3>
-                <p class="lead mb-5">Make good-looking, functional websites that work on all devices. With our help,
-                    you can take advantage of all the exciting possibilities on the modern web. Together, we make sure
-                    your message is delivered effectively.</p>
-            </div>
-            <div class="col-lg-4 mx-auto">
-                <h3 class="">HOW</h3>
-                <p class="lead mb-5">Utilise tried and tested methods and technologies to build bespoke, intelligent
-                    websites to meet your goals. We are experts in integrating different systems (as well as building
-                    our own!) and provide a wealth of experience advising how best to use them.</p>
-            </div>
-            <div class="col-lg-4 mx-auto">
-                <h3 class="">WHY</h3>
-                <p class="lead mb-5">We love digital, we know it inside out, including all of the opportunities and the
-                    challenges it presents. We also get to work with all sorts of remarkable clients who never fail to
-                    keep us on the cutting edge.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Services 2-->
-<section class="content-section bg-primary text-white text-center" id="services">
-    <div class="container">
-        <div class="content-section-heading">
-
-
-            <h2 class="mb-5">Our process</h2>
-            <p class="lead mb-5">We let our work speak for itself and our clients speak for us. Our focus is to provide
-                an unrivalled service whoever the customer. Almost all of our work comes from referrals and we want to
-                keep it that way.</p>
-        </div>
-        <div class="row">
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
-            </span>
-                <h4>
-                    <strong>Plan</strong>
-                </h4>
-                <p class="text-faded mb-0">Planning is key: we work closely with our clients from the outset of every
-                    project. Discussing ideas and possibilities before identifying the perfect plan of action.</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-                <h4>
-                    <strong>Design</strong>
-                </h4>
-                <p class="text-faded mb-0">We believe beauty and function can exist simultaneously. We focus on the tiny
-                    details which set you apart from your competitors.</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-                <h4>
-                    <strong>Build</strong>
-                </h4>
-                <p class="text-faded mb-0">By constructing our websites in proven frameworks and content management
-                    systems we create secure, efficient, high-quality platforms.</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-                <h4>
-                    <strong>Lunch</strong>
-                </h4>
-                <p class="text-faded mb-0">After rigorous quality-control, your project moves into its live environment. We ensure that your project is accessible on large desktop displays, laptops, tablets and mobile devices.</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-                <h4>
-                    <strong>Grow</strong>
-                </h4>
-                <p class="text-faded mb-0">The web is a competitive arena and your website must continue to stand out. Our robust, scalable systems and personal aftercare allow you to stay up to date and expand your business.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Callout -->
-<section class="callout">
-    <div class="container text-center">
-        <h2 class="mx-auto mb-5">Ready to share your <em>next big idea</em> with us?</h2>
-        <a class="btn btn-primary btn-xl" href="#contact">Contact us today!</a>
-    </div>
-</section>
-
-
-<!--  -->
-<section id="" class="content-section" >
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-lg-10 mx-auto">
-                <h2>GET ON THE PATH TO A PERFECT WEBSITE</h2>
-                <p class="lead mb-5">Experts in our field, we design and custom build eye-catching and user-friendlywebsites that achieve the results that our clients want them to.</p>
-                <img src="https://cdn.iconscout.com/public/images/icon/premium/png-512/distance-gps-location-finder-map-route-310b1008d9ed302a-512x512.png" width="800" height="200" alt="">
-                <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- Services -->
-<section class="content-section bg-info text-white text-center" id="services">
-    <div class="container">
-
-        <div class="row">
-
-            <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-like"></i>
-            </span>
-                <h4>
-                    <strong>Domains</strong>
-                </h4>
-                <p class="text-faded mb-0">Launch your online identity with a custom domain name. Find the right domain
-                    name for your business in 60 seconds.</p>
-            </div>
-            <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-pencil"></i>
-            </span>
-                <h4>
-                    <strong>Website</strong>
-                </h4>
-                <p class="text-faded mb-0">Easily create your own website with our website builder: select a theme,
-                    customize it and get your website online today!</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-                <h4>
-                    <strong>Hosting</strong>
-                </h4>
-                <p class="text-faded mb-0">Our web hosting provides you with a free domain name, and easy-to-use tools,
-                    as well as fast and reliable storage and apps.</p>
-            </div>
-            <div class="col-lg-3 col-md-6">
-          <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-mustache"></i>
-            </span>
-                <h4>
-                    <strong>Email</strong>
-                </h4>
-                <p class="text-faded mb-0">We offer a number of enterprise-grade hosted email plans for your small
-                    business. Pick the one that’s right for you.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<!-- features -->
-<section id="features" class="bg-secondary">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Get the features your business needs</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-h"></i>
-                <h6> Easy-to-use tools and apps keep you fully in control</h6>
-                <p>Get your website and email up-and-running in minutes!</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Create a professional website in minutes</h6>
-                <p>No expensive designers or programmers required with our website builder!</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Secure & reliable business email</h6>
-                <p>Safely and securely run your business with our free enterprise-grade hosted email.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>You get “Unlimited” everything</h6>
-                <p>We don't set limits on your success - we offer unlimited storage and bandwidth for shared web hostingplans.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>User-friendly control panel</h6>
-                <p>Our control panel and dashboard are simple to use, supported by tutorial videos and an extensive knowledge base.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Over 400+ apps included</h6>
-                <p>Use over 400+ free apps to build or extend your website: from shopping carts to blogs, we’ve got everything you need.</p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Servers built for speed</h6>
-                <p>Your website and Google will love you. Our servers are built to provide you the best hosting experience including fast loading speeds.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Support you can trust</h6>
-                <p>Become part of the MAVAJ SUN CO family. Any questions? Our in-house and award winning support team are always here to help.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <h6>Committed to security</h6>
-                <p>We take security seriously. Our servers have enhanced security features, firewalls, and intrusion detection. All hosting is secured with a free Let’s Encrypt SSL certificate.</p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- All Plans include -->
-<section id="all-plans-include" class="">
-    <div class="container">
-
-        <div class="row">
-            <div class="col-md-12">
-                <h2>All plans include</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-globe"></i>
-                <p class="title">Domains</p>
-                <p>A domain manager that makes life easy. Simple to add, update, manage, and transfer all your domains in a central place. </p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-refresh"></i>
-                <p class="title">Free Migration</p>
-                <p>We handle the entire migration from your existing host. Our team works hard to ensure a worry-free transfer with no downtime. </p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-wrench"></i>
-                <p class="title">Apps &amp; Tools</p>
-                <p>From Wordpress, Joomla!, and Drupal to over 300+ free open-source applications installed in 1-click. There’s no limit to what you can achieve.
-                </p>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4">
-                <i class="fa fa-gear"></i>
-                <p class="title">Control Panel</p>
-                <p>It's easy to manage your websites, domains, files, and more, all in one location with the industry-leading cPanel control panel.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-bolt"></i>
-                <p class="title">FTP &amp; SFTP</p>
-                <p>Both FTP &amp; SFTP access is available on all web hosting plans for simple secure access to your website.</p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-graduation-cap"></i>
-                <p class="title">Advanced Capabilities</p>
-                <p>Advanced capabilities such as server side includes log file access and web-based managers for files, databases, email, and more. </p>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-<!-- Support -->
-<section id="support" class="bg-secondary">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Let our Squad take care of you</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-8 pull-right">
-                <div class="row">
-                    <div class="col-md-6" id="section">
-                        <p class="title"><i class="fa fa-support"></i> Always available</p>
-                        <p>With 24/7/365 support, our squad team is always here to help. We offer email, chat, and telephone support on all plans.</p>
-                    </div>
-                    <div class="col-md-6 ca-only">
-                        <p class="title"><i class="fa fa-dashboard"></i> One-on-One Support</p>
-                        <p>Need extra assistance? Book a 30-minute dedicated one-on-one session with one of our squad experts. Included for free with our Business Pro and Unlimited Pro plans.</p>
-                    </div>
-                </div><!-- /row -->
-
-                <div class="row">
-                    <div class="col-md-6">
-                        <p class="title"><i class="fa fa-flag"></i> Multi-language Support</p>
-                        <p>Our squad features representatives from all around the world. We currently offer support in English,French, Spanish, and German. </p>
-                    </div>
-                    <div class="col-md-6">
-                        <p class="title"><i class="fa fa-book"></i> Educational Tools</p>
-                        <p>We offer a complete knowledgebase of helpful articles and tutorials. Our instructional videos will also help you set up your website, email, and more.</p>
-                    </div>
+                <div class="content-section-heading text-center">
+                    <h3 class="text-secondary mb-0">Services & Products</h3>
+                    <h2 class="mb-5">What We Offer</h2>
                 </div>
-            </div>
-            <div class="col-md-4 rep">
-                <img data-original="img/support/support.png" class="img-responsive" src="img/support/support.png" style="display: block;">
-            </div>
-        </div>
 
-    </div>
-</section>
-
-
-<!-- Map -->
-<!--<section id="map" class="map">-->
-<!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"-->
-<!--src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>-->
-<!--<br/>-->
-<!--<small>-->
-<!--<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>-->
-<!--</small>-->
-<!--</section>-->
-
-
-<!-- contact form -->
-<section id="contact" class="row content-section text-white">
-    <div class="col-lg-12 col-md-12 col-sm-12 mx-auto text-center">
-        <h1>Get in touch </h1>
-        <small>we love to talk digital</small>
-    </div>
-
-    <div class="col-lg-4 col-md-4 col-sm-10 mx-auto text-center">
-        <p class="text-justify">Technology is constantly evolving, offering new ways to promote your businesses and connect with your customers so we are always looking to find new ways to connect new customers to their clients. We’re always looking to discuss new ideas and opportunities, so if you have any queries please don’t hesitate to speak with us.</p>
-    </div>
-
-    <div class="col-lg-4 col-md-4 col-sm-10 mx-auto text-center" id="contact-form-wrapper">
-        <form id="contact-form" method="POST">
-            <div class="form-row mb-5">
-                <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto ml-lg-auto mr-lg-0">
-                    <input class="form-control form-control-lg border-0 rounded-0" type="text" name="name" placeholder="Full name" required>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
-                    <input class="form-control form-control-lg border-0 rounded-0" type="email" name="email" placeholder="E-mail" required>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
-                    <input class="form-control form-control-lg border-0 rounded-0" type="tel" name="telephone" placeholder="Phone" required>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
-                    <textarea class="form-control form-control-lg border-0 rounded-0" type="textarea" name="message" placeholder="Message" required></textarea>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto mr-lg-auto ml-lg-0">
-                    <button class="btn btn-warning w-100 btn-lg border-0 rounded-0" type="submit">Send enquiry</button>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div id="contact-form-thank-you-message" class="col-lg-9 col-md-8 col-sm-12 mx-auto text-center"></div>
-</section>
-
-
-<!-- Newsletter -->
-<section id="newsletter" class="bg-primary">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>Why should I subscribe?</h2>
-                <p>What's new? What's in? What works and why? More than just information about marketing communications and technology. Real-word insight you can use to make communications work for you. And it's free. Subscribe right now.</p>
-            </div>
-            <div class="col-sm-4">
-                <h2>Newsletter</h2>
-                <strong>Subscribe to our newsletter</strong>
-                <p>Sign up for our newsletter to receive notifications about the latest news, exclusive offers, giveaways, promotions and more!</p>
-                <br>
-                <div id="mc_embed_signup">
-                    <form role="form" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
-                        <div class="input-group input-group-lg">
-                            <input type="text" name="name" class="form-control" id="mce-name" placeholder="Name">
-                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
-                            <span class="input-group-btn">
-                                <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                <div class="row no-gutters">
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                          <span class="caption">
+                            <span class="caption-content">
+                              <h2>Web Design & Development</h2>
+                              <p class="mb-0">From conception and strategy to design and implementation, MAVAJ SUN CO builds and hosts premium websites for businesses, associations, government, and companies.</p>
                             </span>
-                        </div>
-                        <div id="mce-responses">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
-                        </div>
-                    </form>
-                    <br><br>
+                          </span>
+                          <img class="img-fluid" src="img/portfolio-1.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                          <span class="caption">
+                            <span class="caption-content">
+                              <h2>Digital Strategy & Consulting</h2>
+                              <p class="mb-0">MAVAJ SUN CO's digital strategy team consists of Subject Matter Experts (SME’s) from all facets of the digital experience.</p>
+                            </span>
+                          </span>
+                          <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                          <span class="caption">
+                            <span class="caption-content">
+                              <h2>Internet Marketing & Promote</h2>
+                              <p class="mb-0">At MAVAJ SUN CO, we understand that search engine optimization is the key to your web site's success. ALL of our web sites are built to give high search engine rankings.</p>
+                            </span>
+                          </span>
+                          <img class="img-fluid" src="img/portfolio-3.jpg" alt="">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <a class="portfolio-item" href="#">
+                          <span class="caption">
+                            <span class="caption-content">
+                              <h2>Hosting & Security</h2>
+                              <p class="mb-0">MAVAJ SUN CO provides quality, managed hosting services for our customers. Unlike many other hosting providers, our hosting services are custom tailored to your site.</p>
+                            </span>
+                          </span>
+                          <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+                        </a>
+                    </div>
+
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Footer -->
-<footer class="footer text-center">
-    <div class="container">
-        <ul class="list-inline mb-5">
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" target="_blank"
-                   href="https://facebook.com/mavajsunco">
-                    <i class="icon-social-facebook"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" target="_blank"
-                   href="http://www.youtube.com/subscription_center?add_user=mavajsunco">
-                    <i class="icon-social-youtube"></i>
-                </a>
-            </li>
-            <li class="list-inline-item">
-                <a class="social-link rounded-circle text-white mr-3" target="_blank"
-                   href="https://twitter.com/mavajsunco">
-                    <i class="icon-social-twitter"></i>
-                </a>
-            </li>
-        </ul>
+        <!--  Call To Action 1 -->
+        <section id="call-to-action-01" class="content-section bg-primary text-white">
+            <div class="container text-center">
+                <h2 class="mb-4">Web design is our Business and our passion. Our approach is simple and direct, we deliver stunning web design great usability and scalibility with more power through cutting edge web.</h2>
+                <a href="#" class="btn btn-xl btn-light mr-4">GET A QUOTE</a>
+                <a href="#" class="btn btn-xl btn-dark">CHECK OUT OUR WORKS</a>
+            </div>
+        </section>
 
-        <!-- footer menu Section -->
-        <div class="col-lg-12" id="footer-menu">
-            <a href="legal/privacy-policy.html">Privacy Policy</a> |
-            <a href="legal/cookie-policy.html">Cookie Policy</a> |
-            <a href="LICENSE">Licensing</a> |
-            <a href="legal/trademarks.html">Trademarks</a> |
-            <a href="legal/terms-of-use.html">Terms of Use</a> |
-            <a href="legal/faq.html">FAQ</a> |
-            <a style=" cursor: pointer;" href="sitemap.html" id="sideMapBtn">Site Map</a>
-        </div>
-        <!--  footer menu Section End
-        <button class="btn btn-default"  id="sideMapBtn">Site Map</button>-->
+        <!-- About -->
+        <section id="about" class="content-section" >
+            <div class="container text-center">
 
-        <div id="siteMapDIV" style="display: none; box-sizing: inherit;height: 250px; ">
-            <div style="height: 250px; ">Some content...................</div>
-        </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h2>About MAVAJ SUN CO</h2>
 
-        <p class="text-muted small mb-0">Copyright &copy; 2018
-            <a href="https://MavajSunCo.com">MavajSunCo.com</a>, All Rights Reserved.</p>
+                        <p>MAVAJ SUN CO has grown to be premier website design, online marketing, web hosting company.</p>
+                        <p>MAVAJ SUN CO with capabilities to service clients across the world. the professional team at MAVAJ SUN CO have designed and built websites for a diverse range of organisations across many industry groupings, provide hosting server , domain name registration and help them to running their online business seamlessly . </p>
+                    </div>
+                </div>
 
-    </div>
-</footer>
+                <div class="row">
+                    <div class="col-lg-4 mx-auto">
+                        <h3>WHAT</h3>
+                        <p class="lead mb-5">Make good-looking, functional websites that work on all devices. With our help, you can take advantage of all the exciting possibilities on the modern web. Together, we make sure your message is delivered effectively.</p>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <h3 class="">HOW</h3>
+                        <p class="lead mb-5">Utilise tried and tested methods and technologies to build bespoke, intelligent websites to meet your goals. We are experts in integrating different systems (as well as building  our own!) and provide a wealth of experience advising how best to use them.</p>
+                    </div>
+                    <div class="col-lg-4 mx-auto">
+                        <h3 class="">WHY</h3>
+                        <p class="lead mb-5">We love digital, we know it inside out, including all of the opportunities and the challenges it presents. We also get to work with all sorts of remarkable clients who never fail to keep us on the cutting edge.</p>
+                    </div>
+                </div>
 
-<!-- Scroll to Top Button-->
-<a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-    <i class="fa fa-angle-up"></i>
-</a>
+            </div>
+        </section>
 
-<!-- Bootstrap core JavaScript -->
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <!-- Our Process-->
+        <section id="our-process" class="content-section bg-primary text-white text-center">
+            <div class="container">
 
-<!-- Plugin JavaScript -->
-<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+                <div class="content-section-heading">
+                    <h2 class="mb-5">Our process</h2>
+                    <p class="lead mb-5">We let our work speak for itself and our clients speak for us. Our focus is to provide an unrivalled service whoever the customer. Almost all of our work comes from referrals and we want to keep it that way.</p>
+                </div>
 
-<!-- Custom scripts -->
-<script src="js/msc.min.js"></script>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-screen-smartphone"></i>
+                        </span>
+                        <h4>
+                            <strong>Plan</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Planning is key: we work closely with our clients from the outset of every project. Discussing ideas and possibilities before identifying the perfect plan of action.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-like"></i>
+                        </span>
+                        <h4>
+                            <strong>Design</strong>
+                        </h4>
+                        <p class="text-faded mb-0">We believe beauty and function can exist simultaneously. We focus on the tiny details which set you apart from your competitors.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-pencil"></i>
+                        </span>
+                        <h4>
+                            <strong>Build</strong>
+                        </h4>
+                        <p class="text-faded mb-0">By constructing our websites in proven frameworks and content management systems we create secure, efficient, high-quality platforms.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                            <i class="icon-mustache"></i>
+                        </span>
+                        <h4>
+                            <strong>Lunch</strong>
+                        </h4>
+                        <p class="text-faded mb-0">After rigorous quality-control, your project moves into its live environment. We ensure that your project is accessible on large desktop displays, laptops, tablets and mobile devices.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <span class="service-icon rounded-circle mx-auto mb-3">
+                         <i class="icon-mustache"></i>
+                        y </span>
+                        <h4>
+                            <strong>Grow</strong>
+                        </h4>
+                        <p class="text-faded mb-0">The web is a competitive arena and your website must continue to stand out. Our robust, scalable systems and personal aftercare allow you to stay up to date and expand your business.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-</body>
+        <!-- Call To Action 2 -->
+        <section  id="call-to-action-02"  class="callout">
+            <div class="container text-center">
+                <h2 class="mx-auto mb-5">Ready to share your <em>next big idea</em> with us?</h2>
+                <a class="btn btn-primary btn-xl" href="#contact">Contact us today!</a>
+            </div>
+        </section>
+
+        <!--  Call To Action 3 -->
+        <section id="call-to-action-03" class="content-section" >
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-10 mx-auto">
+                        <h2>GET ON THE PATH TO A PERFECT WEBSITE</h2>
+                        <p class="lead mb-5">Experts in our field, we design and custom build eye-catching and user-friendlywebsites that achieve the results that our clients want them to.</p>
+                        <img src="https://cdn.iconscout.com/public/images/icon/premium/png-512/distance-gps-location-finder-map-route-310b1008d9ed302a-512x512.png" width="800" height="200" alt="">
+                        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">What We Offer</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product -->
+        <section id="product" class="content-section bg-info text-white text-center">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+                  <span class="service-icon rounded-circle mx-auto mb-3">
+                      <i class="icon-like"></i>
+                    </span>
+                        <h4>
+                            <strong>Domains</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Launch your online identity with a custom domain name. Find the right domain name for your business in 60 seconds.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+                  <span class="service-icon rounded-circle mx-auto mb-3">
+                      <i class="icon-pencil"></i>
+                    </span>
+                        <h4>
+                            <strong>Website</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Easily create your own website with our website builder: select a theme, customize it and get your website online today!</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                  <span class="service-icon rounded-circle mx-auto mb-3">
+                      <i class="icon-mustache"></i>
+                    </span>
+                        <h4>
+                            <strong>Hosting</strong>
+                        </h4>
+                        <p class="text-faded mb-0">Our web hosting provides you with a free domain name, and easy-to-use tools, as well as fast and reliable storage and apps.</p>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                  <span class="service-icon rounded-circle mx-auto mb-3">
+                      <i class="icon-mustache"></i>
+                    </span>
+                        <h4>
+                            <strong>Email</strong>
+                        </h4>
+                        <p class="text-faded mb-0">We offer a number of enterprise-grade hosted email plans for your small business. Pick the one that’s right for you.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- features -->
+        <section id="features" class="bg-secondary">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Get the features your business needs</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-h"></i>
+                        <h6> Easy-to-use tools and apps keep you fully in control</h6>
+                        <p>Get your website and email up-and-running in minutes!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Create a professional website in minutes</h6>
+                        <p>No expensive designers or programmers required with our website builder!</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Secure & reliable business email</h6>
+                        <p>Safely and securely run your business with our free enterprise-grade hosted email.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>You get “Unlimited” everything</h6>
+                        <p>We don't set limits on your success - we offer unlimited storage and bandwidth for shared web hostingplans.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>User-friendly control panel</h6>
+                        <p>Our control panel and dashboard are simple to use, supported by tutorial videos and an extensive knowledge base.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Over 400+ apps included</h6>
+                        <p>Use over 400+ free apps to build or extend your website: from shopping carts to blogs, we’ve got everything you need.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Servers built for speed</h6>
+                        <p>Your website and Google will love you. Our servers are built to provide you the best hosting experience including fast loading speeds.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Support you can trust</h6>
+                        <p>Become part of the MAVAJ SUN CO family. Any questions? Our in-house and award winning support team are always here to help.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <h6>Committed to security</h6>
+                        <p>We take security seriously. Our servers have enhanced security features, firewalls, and intrusion detection. All hosting is secured with a free Let’s Encrypt SSL certificate.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- All Plans include -->
+        <section id="all-plans-include" class="">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>All plans include</h2>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-globe"></i>
+                        <p class="title">Domains</p>
+                        <p>A domain manager that makes life easy. Simple to add, update, manage, and transfer all your domains in a central place. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-refresh"></i>
+                        <p class="title">Free Migration</p>
+                        <p>We handle the entire migration from your existing host. Our team works hard to ensure a worry-free transfer with no downtime. </p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-wrench"></i>
+                        <p class="title">Apps &amp; Tools</p>
+                        <p>From Wordpress, Joomla!, and Drupal to over 300+ free open-source applications installed in 1-click. There’s no limit to what you can achieve.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <i class="fa fa-gear"></i>
+                        <p class="title">Control Panel</p>
+                        <p>It's easy to manage your websites, domains, files, and more, all in one location with the industry-leading cPanel control panel.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-bolt"></i>
+                        <p class="title">FTP &amp; SFTP</p>
+                        <p>Both FTP &amp; SFTP access is available on all web hosting plans for simple secure access to your website.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <i class="fa fa-graduation-cap"></i>
+                        <p class="title">Advanced Capabilities</p>
+                        <p>Advanced capabilities such as server side includes log file access and web-based managers for files, databases, email, and more. </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Support -->
+        <section id="support" class="bg-secondary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Let our Squad take care of you</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 pull-right">
+                        <div class="row">
+                            <div class="col-md-6" id="section">
+                                <p class="title"><i class="fa fa-support"></i> Always available</p>
+                                <p>With 24/7/365 support, our squad team is always here to help. We offer email, chat, and telephone support on all plans.</p>
+                            </div>
+                            <div class="col-md-6 ca-only">
+                                <p class="title"><i class="fa fa-dashboard"></i> One-on-One Support</p>
+                                <p>Need extra assistance? Book a 30-minute dedicated one-on-one session with one of our squad experts. Included for free with our Business Pro and Unlimited Pro plans.</p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="title"><i class="fa fa-flag"></i> Multi-language Support</p>
+                                <p>Our squad features representatives from all around the world. We currently offer support in English,French, Spanish, and German. </p>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="title"><i class="fa fa-book"></i> Educational Tools</p>
+                                <p>We offer a complete knowledgebase of helpful articles and tutorials. Our instructional videos will also help you set up your website, email, and more.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 rep">
+                        <img data-original="img/support/support.png" class="img-responsive" src="img/support/support.png" style="display: block;">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Map -->
+        <!--<section id="map" class="map">-->
+            <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>-->
+            <!--<br/>-->
+            <!--<small>-->
+                <!--<a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>-->
+            <!--</small>-->
+        <!--</section>-->
+
+        <!-- contact form -->
+        <section id="contact" class="row content-section text-white">
+            <div class="col-lg-12 col-md-12 col-sm-12 mx-auto text-center">
+                <h1>Get in touch </h1>
+                <small>we love to talk digital</small>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-10 mx-auto text-center">
+                <p class="text-justify">Technology is constantly evolving, offering new ways to promote your businesses and connect with your customers so we are always looking to find new ways to connect new customers to their clients. We’re always looking to discuss new ideas and opportunities, so if you have any queries please don’t hesitate to speak with us.</p>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-10 mx-auto text-center" id="contact-form-wrapper">
+                <form id="contact-form" method="POST">
+                    <div class="form-row mb-5">
+                        <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto ml-lg-auto mr-lg-0">
+                            <input class="form-control form-control-lg border-0 rounded-0" type="text" name="name" placeholder="Full name" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
+                            <input class="form-control form-control-lg border-0 rounded-0" type="email" name="email" placeholder="E-mail" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
+                            <input class="form-control form-control-lg border-0 rounded-0" type="tel" name="telephone" placeholder="Phone" required>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto">
+                            <textarea class="form-control form-control-lg border-0 rounded-0" type="textarea" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="col-lg-12 col-md-12 col-sm-12 pb-2 mx-auto mr-lg-auto ml-lg-0">
+                            <button class="btn btn-warning w-100 btn-lg border-0 rounded-0" type="submit">Send enquiry</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div id="contact-form-thank-you-message" class="col-lg-9 col-md-8 col-sm-12 mx-auto text-center"></div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletter" class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h2>Why should I subscribe?</h2>
+                        <p>What's new? What's in? What works and why? More than just information about marketing communications and technology. Real-word insight you can use to make communications work for you. And it's free. Subscribe right now.</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <h2>Newsletter</h2>
+                        <strong>Subscribe to our newsletter</strong>
+                        <p>Sign up for our newsletter to receive notifications about the latest news, exclusive offers, giveaways, promotions and more!</p>
+                        <br>
+                        <div id="mc_embed_signup">
+                            <form role="form" action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate="">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="name" class="form-control" id="mce-name" placeholder="Name">
+                                    <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email address...">
+                                    <span class="input-group-btn">
+                                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default">Subscribe!</button>
+                                    </span>
+                                </div>
+                                <div id="mce-responses">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                            </form>
+                            <br><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer text-center">
+            <div class="container">
+                <ul class="list-inline mb-5">
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" target="_blank"
+                           href="https://facebook.com/mavajsunco">
+                            <i class="icon-social-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" target="_blank"
+                           href="http://www.youtube.com/subscription_center?add_user=mavajsunco">
+                            <i class="icon-social-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a class="social-link rounded-circle text-white mr-3" target="_blank"
+                           href="https://twitter.com/mavajsunco">
+                            <i class="icon-social-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- footer menu Section -->
+                <div class="col-lg-12" id="footer-menu">
+                    <a href="legal/privacy-policy.html">Privacy Policy</a> |
+                    <a href="legal/cookie-policy.html">Cookie Policy</a> |
+                    <a href="LICENSE">Licensing</a> |
+                    <a href="legal/trademarks.html">Trademarks</a> |
+                    <a href="legal/terms-of-use.html">Terms of Use</a> |
+                    <a href="legal/faq.html">FAQ</a> |
+                    <a style=" cursor: pointer;" href="sitemap.html" id="sideMapBtn">Site Map</a>
+                </div>
+                <!--  footer menu Section End
+                <button class="btn btn-default"  id="sideMapBtn">Site Map</button>-->
+
+                <div id="siteMapDIV" style="display: none; box-sizing: inherit;height: 250px; ">
+                    <div style="height: 250px; ">Some content...................</div>
+                </div>
+
+                <p class="text-muted small mb-0">Copyright &copy; 2018
+                    <a href="https://MavajSunCo.com">MavajSunCo.com</a>, All Rights Reserved.</p>
+
+            </div>
+        </footer>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+            <i class="fa fa-angle-up"></i>
+        </a>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts -->
+        <script src="js/msc.min.js"></script>
+
+    </body>
 
 </html>
