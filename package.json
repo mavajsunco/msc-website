@@ -12,7 +12,8 @@
   "main": "index.html",
   "scripts": {
     "dev": "gulp dev",
-    "build": "gulp"
+    "build": "gulp",
+    "deploy": "./deploy-ghpages.sh"
   },
   "repository": {
     "type": "git",
