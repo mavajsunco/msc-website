@@ -7,6 +7,15 @@ script:
   - npm test
   - gulp
   - rm -rf scss
+  - rm package.json
+  - rm .gitignore
+  - rm .travis.yml
+  - rm README.md
+  - rm gulpfile.js
+  - rm js/msc.js
+  - rm js/google-analytics.js
+  - rm css/msc.css
+  - rm -rf node_modules
 cache:
   directories:
     - node_modules
