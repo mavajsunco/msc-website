@@ -6,6 +6,7 @@ install:       npm install
 script:
   - npm test
   - gulp
+  - rm -rf scss
 cache:
   directories:
     - node_modules
