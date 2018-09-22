@@ -15,11 +15,19 @@ script:
   - rm js/msc.js
   - rm js/google-analytics.js
   - rm css/msc.css
+  - rm sonar-project.properties
   - rm -rf node_modules
 cache:
   directories:
     - node_modules
     
+# addons:
+ # sonarcloud:
+   # organization: "mavajsunco-github" # the key of the org 
+#script:
+  # other script steps might be done before running the actual analysis
+  #- sonar-scanner
+  
 deploy:
   provider: pages
   skip-cleanup: true
